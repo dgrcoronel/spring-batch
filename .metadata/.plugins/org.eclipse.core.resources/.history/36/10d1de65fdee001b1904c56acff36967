@@ -1,0 +1,14 @@
+package com.springbatch.migracaodados.writer;
+
+import org.springframework.batch.item.database.builder.JdbcBatchItemWriterBuilder;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class BancoPessoaWriterConfig {
+	
+	@Bean
+	public JdbcBatchItemWriterBuilder<Pessoa> bancoPessoaWriter() {
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+package com.springbatch.migracaodados.step;
+
+@Configuration
+public class MigrarPessoaStepConfig {
+
+}

@@ -1,0 +1,12 @@
+package com.springbatch.contasbancarias.writer;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class CompositeContaWriterConfig {
+
+	@Bean
+	public CompositeItemWriter<Conta> compositeContaWriter() {
+		
+	}
+}

@@ -1,0 +1,17 @@
+package com.springbatch.contasbancarias.processor;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.springbatch.contasbancarias.dominio.Conta;
+
+@Configuration
+public class ClassifierContaWriterConfig {
+	
+	@Bean
+	public ClassifierCompositeItemWriter<Conta> classifierContaWriter() {
+		return new ClassifierCompositeWriter<Conta>()
+				.classifier(classifier())
+	}
+
+}

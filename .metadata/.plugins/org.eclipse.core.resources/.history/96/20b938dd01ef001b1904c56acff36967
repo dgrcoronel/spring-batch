@@ -1,0 +1,17 @@
+package com.springbatch.migracaodados.writer;
+
+import org.springframework.batch.item.file.FlatFileItemWriter;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.springbatch.migracaodados.dominio.Pessoa;
+
+@Configuration
+public class ArquivoPessoasInvalidasWriterConfig {
+	
+	@Bean
+	public FlatFileItemWriter<Pessoa> arquivoPessoasInvalidasWriter() {
+		
+	}
+
+}

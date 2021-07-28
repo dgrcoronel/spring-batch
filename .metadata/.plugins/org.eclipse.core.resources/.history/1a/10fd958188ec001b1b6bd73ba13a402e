@@ -1,0 +1,7 @@
+package com.springbatch.demonstrativoorcamentario.writer;
+
+import org.springframework.batch.item.file.FlatFileFooterCallback;
+
+public class DemonstrativoOrcamentarioRodape implements FlatFileFooterCallback {
+
+}

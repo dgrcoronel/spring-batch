@@ -1,0 +1,30 @@
+package com.springbatch.migracaodados.reader;
+
+import org.springframework.batch.item.file.FlatFileItemReader;
+import org.springframework.batch.item.file.builder.FlatFileItemReaderBuilder;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.FileSystemResource;
+
+import com.springbatch.migracaodados.dominio.DadosBancarios;
+import com.springbatch.migracaodados.dominio.Pessoa;
+
+@Configuration
+public class ArquivoDadosBancariosReaderConfig {
+	
+	@Bean
+	public FlatFileItemReader<DadosBancarios> arquivoDadosBancariosReader() {
+		return new FlatFileItemReaderBuilder<Pessoa>()
+				.name("arquivoPessoaReader")
+				.resource(new FileSystemResource("files/pessoas.csv"))
+				.delimited()
+				.names("nome", "email", "dataNascimento", "idade", "id")
+				.addComment("--")
+//				Utilizdo caso seja mapeamento padrao
+//				.targetType(Pessoa.class)
+//				Utilizado caso tenha tipos complexos como date
+				.fieldSetMapper(fieldSetMapper())
+				.build();
+	}
+
+}

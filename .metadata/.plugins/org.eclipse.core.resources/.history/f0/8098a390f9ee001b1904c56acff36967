@@ -1,0 +1,8 @@
+package com.springbatch.migracaodados.reader;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class ArquivoPessoaReaderConfig {
+
+}

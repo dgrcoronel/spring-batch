@@ -1,0 +1,19 @@
+package com.springbatch.contasbancarias.writer;
+
+import org.springframework.batch.item.file.FlatFileItemWriter;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.springbatch.contasbancarias.dominio.Conta;
+
+@Configuration
+public class FileContaWriterConfig {
+	
+	@Bean
+	public FlatFileItemWriter<Conta> fileContaWriter() {
+		return new FlatFileItemWriterBuilder<Conta>()
+				.name("fileContaWriter")
+				.resource(new FileSystemResource("./files/contas.txt"))
+	}
+
+}

@@ -1,0 +1,6 @@
+spring.datasource.jdbcUrl=jdbc:mysql://localhost:3306/spring_batch
+spring.datasource.username=user
+spring.datasource.password=123456
+app.datasource.jdbcUrl=jdbc:mysql://localhost:3306/migracao_dados
+spring.datasource.username=user
+spring.datasource.password=123456

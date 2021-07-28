@@ -1,0 +1,6 @@
+package com.springbatch.contasbancarias.writer;
+
+@Configuration
+public class FileContaWriterConfig {
+
+}

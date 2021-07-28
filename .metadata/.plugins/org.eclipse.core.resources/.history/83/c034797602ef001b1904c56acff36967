@@ -1,0 +1,14 @@
+package com.springbatch.migracaodados.writer;
+
+import org.springframework.batch.item.support.ClassifierCompositeItemWriter;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class PessoaClassifierWriterConfig {
+	
+	@Bean
+	public ClassifierCompositeItemWriter<Pessoa> pessoaClassifierWriter() {
+		
+	}
+
+}

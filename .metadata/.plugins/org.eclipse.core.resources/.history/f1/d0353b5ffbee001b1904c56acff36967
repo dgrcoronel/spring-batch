@@ -1,0 +1,6 @@
+package com.springbatch.migracaodados.reader;
+
+@Configuration
+public class ArquivoDadosBancariosReaderConfig {
+
+}

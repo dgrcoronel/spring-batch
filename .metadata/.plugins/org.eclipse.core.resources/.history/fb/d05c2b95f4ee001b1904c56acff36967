@@ -1,0 +1,11 @@
+package com.springbatch.migracaodados.job;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class MigracaoDadosJobConfig {
+	
+	@Autowired
+	private JobBuilderFactory jobBuilderFactory;
+
+}

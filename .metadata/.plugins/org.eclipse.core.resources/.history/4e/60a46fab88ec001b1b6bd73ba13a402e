@@ -1,0 +1,21 @@
+package com.springbatch.demonstrativoorcamentario.writer;
+
+import java.io.IOException;
+import java.io.Writer;
+import java.text.NumberFormat;
+
+import org.springframework.batch.item.file.FlatFileFooterCallback;
+
+public class DemonstrativoOrcamentarioRodape implements FlatFileFooterCallback {
+	
+	private Double totalGeral = 0.0
+
+	@Override
+	public void writeFooter(Writer writer) throws IOException {
+		writer.append("\n");
+		writer.append(String.format("\t\t\t\t\t\t\t  Total: %s", NumberFormat.getCurrencyInstance().format(totalGeral)));
+		writer.append(String.format("\t\t\t\t\t\t\t  Código de Autenticação: %s", "fkyew6868fewjfhjjewf"));
+		
+	}
+
+}

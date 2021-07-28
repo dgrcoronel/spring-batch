@@ -1,0 +1,6 @@
+package com.springbatch.migracaodados.writer;
+
+@Configuration
+public class ArquivoPessoasInvalidasWriterConfig {
+
+}

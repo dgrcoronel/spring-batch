@@ -1,0 +1,8 @@
+package com.springbatch.contasbancarias.processor;
+
+@Configuration
+public class ClassifierContaWriterConfig {
+	
+	
+
+}
